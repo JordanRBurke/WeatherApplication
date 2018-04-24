@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:id="@+id/layout_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/dark_sky_text"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/powered_by_dark_sky"
+        android:textColor="@color/customColorOne"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="@+id/layout_background"
+        app:layout_constraintTop_toTopOf="@+id/layout_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        app:layout_constraintLeft_toLeftOf="@id/layout_background"
+        app:layout_constraintTop_toTopOf="@id/layout_background"
+        android:layout_marginBottom="300dp"
+        android:text="@string/the_location"
+        android:textSize="36sp"
+        android:textColor="@color/customColorOne"
+        android:fontFamily="monospace"
+        />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="@id/layout_background"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintTop_toTopOf="@id/layout_background"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/default_weather"
+        android:tint="@color/customColorOne"
+        />
+
+    <TextView
+        android:id="@+id/summary_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/weather_icon"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        app:layout_constraintLeft_toLeftOf="@id/layout_background"
+        android:layout_marginTop="10dp"
+        android:text="Summary"
+        android:textSize="30sp"
+        android:textColor="@color/customColorOne"
+
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintTop_toBottomOf="@id/summary_text_view"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        app:layout_constraintLeft_toLeftOf="@id/layout_background"
+        android:layout_marginTop="0dp"
+        app:layout_goneMarginBottom="20dp"
+        android:text="@string/degrees"
+        android:textSize="45sp"
+        android:textColor="@color/customColorOne"/>
+
+    <TextView
+        android:id="@+id/degree_view_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintLeft_toLeftOf="@id/layout_background"
+        android:textSize="30sp"
+        android:text="90"
+        android:textColor="@color/customColorOne"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintLeft_toLeftOf="@id/degree_view_bottom"
+        android:layout_marginStart="40dp"
+        android:text="/50"
+        android:textColor="@color/customColorOne"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/precip_title_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        android:textSize="25sp"
+        android:text="@string/precip"
+        android:textColor="@color/customColorOne"
+        android:layout_marginRight="35dp"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:id="@+id/precip_percentage_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_background"
+        app:layout_constraintRight_toRightOf="@id/layout_background"
+        android:textSize="30sp"
+        android:text="@string/precip_number"
+        android:textColor="@color/customColorOne"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

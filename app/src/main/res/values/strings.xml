@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">WeatherApplication</string>
+    <string name="powered_by_dark_sky">Powered By: Dark Sky</string>
+    <string name="the_location">The Location is %1$s</string>
+    <string name="degrees">%1$s /u00B0</string>
+    <string name="precip">Precip:</string>
+    <string name="precip_number">50</string>
 </resources>
