@@ -5,4 +5,11 @@
     <string name="degrees">%1$s /u00B0</string>
     <string name="precip">Precip:</string>
     <string name="precip_number">50</string>
+    <string name="google_base_url">http://maps.googleapis.com/maps/api/geocode/</string>
+    <string name="dark_sky_base_url">http://api.darksky.net/forecast/</string>
+    <string name="google_key">AIzaSyAVC0yQjgwV24-dXgVJ2vmEsQjjTh_fsp</string>
+    <string name="dark_sky_key">1411e3a74ea5798eaee6246d252edd1b</string>
+    <string name="temp_format">%1$d°F</string>
+    <string name="low_temp_format">/ %1$d°F</string>
+    <string name="precip_chance_format">%1$d%%</string>
 </resources>

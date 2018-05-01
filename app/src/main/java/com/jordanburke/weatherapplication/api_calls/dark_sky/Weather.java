@@ -2,8 +2,11 @@ package com.jordanburke.weatherapplication.api_calls.dark_sky;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.provider.ContactsContract;
 
 import com.google.gson.annotations.SerializedName;
+
+import java.util.List;
 
 public class Weather implements Parcelable {
 
@@ -70,9 +73,59 @@ public class Weather implements Parcelable {
 
     class CurrentProperties {
 
+        @SerializedName("summary")
+        private String summary;
+
+        @SerializedName("icon")
+        private String icon;
+
+        @SerializedName("temperature")
+        private double temperature;
+
+        public String getSummary() {
+            return summary;
+        }
+
+        public String getIcon() {
+            return icon;
+        }
+
+        public double getTemperature() {
+            return temperature;
+        }
     }
 
     class DailyProperties {
+        @SerializedName("data")
+        private List<DailyData> mDailyDataList;
+
+        public List<DailyData> mDailyDataList() {
+            return mDailyDataList;
+        }
+
+        class DailyData {
+
+            @SerializedName("precipProbability")
+            private String precipProbability;
+
+            @SerializedName("temperatureHigh")
+            private boolean temperatureHigh;
+
+            @SerializedName("temperatureLow")
+            private boolean temperatureLow;
+
+            public String getPrecipProbability() {
+                return precipProbability;
+            }
+
+            public boolean isTemperatureHigh() {
+                return temperatureHigh;
+            }
+
+            public boolean isTemperatureLow() {
+                return temperatureLow;
+            }
+        }
 
     }
 }
